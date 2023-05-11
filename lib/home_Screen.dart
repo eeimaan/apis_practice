@@ -4,6 +4,7 @@ import 'package:apis_practice/model/postmodel.dart';
 import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
 
+// ignore: camel_case_types
 class homescreen extends StatefulWidget {
   const homescreen({super.key});
 
@@ -50,10 +51,10 @@ class _homescreenState extends State<homescreen> {
                         crossAxisAlignment: CrossAxisAlignment.start,
                         
                         children: [
-                           Text('Title', style: TextStyle(fontSize: 15,fontWeight: FontWeight.bold)),
+                           const Text('Title', style: TextStyle(fontSize: 15,fontWeight: FontWeight.bold)),
                            Text(postlist[index].title.toString()),
-                           SizedBox(height: 5,),
-                           Text('Description', style: TextStyle(fontSize: 15,fontWeight: FontWeight.bold)),
+                           const SizedBox(height: 5,),
+                           const Text('Description', style: TextStyle(fontSize: 15,fontWeight: FontWeight.bold)),
                            Text(postlist[index].body.toString()),
                            
                            
@@ -71,3 +72,4 @@ class _homescreenState extends State<homescreen> {
     );
   }
 }
+
