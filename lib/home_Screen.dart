@@ -16,8 +16,7 @@ class _homescreenState extends State<homescreen> {
   List<postmodel> postlist = [];
 
   Future<List<postmodel>> getPostApi() async {
-    final resposne =
-        await http.get(Uri.parse('https://jsonplaceholder.typicode.com/posts'));
+    final resposne = await http.get(Uri.parse('https://jsonplaceholder.typicode.com/posts'));
     var data = jsonDecode(resposne.body.toString());
     if (resposne.statusCode == 200) {
       for (Map<String, dynamic>  i in data) {

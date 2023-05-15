@@ -1,4 +1,8 @@
 
+import 'package:apis_practice/ExampleFour.dart';
+import 'package:apis_practice/example_Five.dart';
+import 'package:apis_practice/example_three.dart';
+import 'package:apis_practice/hme_scrn3.dart';
 import 'package:apis_practice/home_scrn.dart';
 import 'package:flutter/material.dart';
 
@@ -20,7 +24,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: home_scrn(),
+      home: LastExampleScreen(),
     );
   }
 }
